@@ -1,6 +1,7 @@
  const btn = document.getElementById("btn");
 
-  btn.addEventListener("click", function () {
+  btn.addEventListener("click", function (e) {
+	  e.preventDefault()
 
     const name = document.getElementById("name").value;
     const age = document.getElementById("age").value;
