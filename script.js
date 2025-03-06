@@ -1,7 +1,6 @@
  const btn = document.getElementById("btn");
 
-  btn.addEventListener("click", function (event) {
-    event.preventDefault(); 
+  btn.addEventListener("click", function () {
 
     const name = document.getElementById("name").value;
     const age = document.getElementById("age").value;
@@ -11,7 +10,7 @@
       return;
     }
 
-    const ageNumber = parseInt(age, 10);
+    const ageNumber = parseInt(age);
 
     new Promise((resolve, reject) => {
       setTimeout(() => {
